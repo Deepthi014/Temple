@@ -1,0 +1,378 @@
+*{
+    font-family: verdana ;
+    color:#5c5858;
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: #ffecd2;
+}
+
+/* NAVBAR */
+
+#navbar{
+   height:70px;
+   width:100%;
+   background-color: #ffecd2;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
+   position: fixed;
+   top: 0;
+   z-index: 10;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#navbar a {
+    padding: 0 45px; 
+    text-decoration: none; 
+    font-size: 1rem;
+    
+}
+
+#navbar a:hover{
+    color:#880000;
+    font-size: 1.1em;
+}
+
+/* MAIN */
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 7rem;
+    width:100%
+}
+#main_head,
+#sub_head{
+    font-size: 2.2em;
+    color:#1b1b1b;
+
+}
+
+#home img{
+    margin-top: 4%;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.6); 
+    border-radius: 10px;
+    
+}
+ 
+
+/* ANIMATION */
+
+#home:target, 
+#about:target,
+#location:target, 
+#photos:target, 
+#contactUs:target{
+    animation: slideIn 2s forwards;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+} 
+
+/* ABOUTUS */
+#about{
+    padding-top: 1rem;
+}
+
+#about div{
+    background-color: rgba(255, 255, 255, 0.753);
+    margin:4rem 4rem;
+    padding: 2rem 3rem;
+    font-size: 1.2em;
+    line-height: 2em;
+    border:1px solid black;
+    border-radius: 10px;
+    text-align: center;
+
+}
+#about h1{
+    margin: 1.2rem;
+    font-size: 2em;
+    color:#1b1b1b;
+}
+
+/* LOCATION */
+#location{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  */
+    text-align: center;
+    padding: 4rem;
+}
+
+#location h1{
+    
+    font-size: 30px;
+    color:#1b1b1b;
+    margin-bottom: 3rem;
+
+}
+
+/* PHOTOS */
+
+#photos {
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.753);
+    height:400px;
+    width:500px */
+    padding-top: 120px;
+    
+}
+
+#photos h1{
+    font-size: 30px;
+    color:#1b1b1b;
+}
+
+#photos div{
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#photos div img{
+    margin: 40px 30px;
+    width: 500px;
+    height:350px;
+    border-radius:20px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.6); 
+
+}
+
+/* CONTACTUS */
+#contactUs{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 60px;
+
+}
+#contactUs h1{
+    font-size: 30px;
+    color:#1b1b1b;
+}
+
+#con_div{
+    background-color:#fff5ef;
+    
+    height: 100%;
+    margin: 40px 30px;
+    width:70%;
+    border:1px solid #1b1b1b;
+    border-radius: 50px 0px;
+
+}
+form{
+    margin-top: 10px;
+}
+#con_div #name, #email,#place,
+#con_div textarea{
+    /* margin: none; */
+    background-color:#fff5ef;
+    margin-top:40px;
+    height:35px;
+    width:50%;
+    
+    border:none;
+    border-bottom:2px solid #fcb69f;
+
+}
+#con_div #name:focus,
+#con_div #email:focus,
+#con_div #place:focus,
+#con_div textarea:focus {
+    outline: none;
+    border-bottom:2px solid #676260;
+
+}
+#con_div #name::placeholder,
+#con_div #email::placeholder,
+#con_div #place::placeholder,
+#con_div textarea::placeholder{
+    padding-left: 8px;
+    font-style: italic;
+
+}
+#con_div form{
+    font-size: 18px;
+
+}
+
+#btn{
+    /* background-color: #fcb69f; */
+    margin-top:40px;
+    background: rgb(252,182,159);
+    /* background-color:#fff5ef; */
+    border:2px solid #676260;
+
+    height:45px;
+    width:150px;
+    /* border: none; */
+    border-radius: 20px;
+    margin-bottom: 40px ;
+    color:rgb(32, 30, 30);
+    font-size: 15px;
+    
+}
+#btn:hover{
+    background-color: #fff5ef;
+    border:2px solid rgb(252,182,159);
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+#footer_1{
+    background-color: #1b1b1b;
+    text-align: center;
+    margin-top: 100px;
+    padding: 50px;
+    line-height: 40px;
+    width: 92%;
+}
+
+#footer_1 pre{
+    color:rgba(255, 255, 255, 0.753)
+}
+
+#footer_1 pre i{
+    font-size: 25px;
+    margin-right:10px
+}
+
+@media screen and (max-width:950px) and (min-width:300px){
+    nav{
+        width: 70%;
+    }
+    #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:70px;
+        width:100%;
+    }
+    #navbar a{
+        /* padding: 0 2rem;  */
+        text-decoration: none; 
+        font-size: 0.4rem;
+        display: inline-block;
+    }
+    #navbar a:hover{
+        color:#880000;
+        font-size: 0.5em;
+    }
+    #home{
+        display: flex;
+        /* flex-direction: column; */
+        padding:8rem 2rem ;
+        align-items: center;
+        justify-content: center;
+        width:80%;
+        }
+
+    #home img{
+        width:100%;
+        height: 50%;
+    }
+    #main_head,
+    #sub_head{
+        font-size: 1em;
+    }
+
+    #about{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        padding-top: 1px
+    }
+
+    #about div{
+        width: 60%;
+        padding: 0.1rem 2rem;
+        font-size: 1em;
+        line-height: 1.5em;
+    
+    }
+    #about h1{
+        font-size: 1.5rem;
+    }
+     
+    #location iframe{
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+        width:90%;
+        text-align: center;
+        padding: 0 2rem;
+    }
+    
+    #location h1{
+        font-size: 2rem;
+    }
+
+    #photos {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;        
+    }
+    #photos h3{
+        margin-top: 100px;
+    }
+    #photos h1{
+        font-size: 2rem;
+    }
+    
+    #photos div img{
+        width: 90vw;
+        height:40vh;
+        border-radius:2rem;    
+    }
+
+    #contactUs{
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* text-align: center; */
+        /* align-items: center; */
+        padding-top: 60px;
+    
+    }
+    #contactUs h1{
+        font-size: 2rem;
+        color:#1b1b1b;
+    }
+    
+    #con_div{
+        /* background-color:#fff5ef; */
+        
+        /* height: 100%; */
+        margin: 2rem 3rem;
+        width:70%;
+        /* border:1px solid #1b1b1b; */
+        /* border-radius: 50px 0px; */
+    
+    }
+    #footer_1{
+        width:100%;
+        font-size: 25%;
+    }
+
+}
