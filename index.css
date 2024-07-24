@@ -50,7 +50,7 @@ body{
     margin-top:6rem
 }
 .containerH div{
-    width:100%;
+    width:90%;
     display: flex;
     justify-content: center;
 }
@@ -221,15 +221,15 @@ footer{
 
 
 
-#home, #about, #location, #photos, #contactUs {
-    opacity: 0; /* initial opacity */
-    transform: translateX(-100%); /* initial translate */
+/* #home, #about, #location, #photos, #contactUs {
+    opacity: 0; 
+    transform: translateX(-100%); 
 }
 .animate {
     animation: slideIn 2s forwards;
 }
-
-#home:target, 
+*/
+/* #home:target, 
 #about:target,
 #location:target, 
 #photos:target, 
@@ -246,7 +246,7 @@ footer{
     transform: translateX(0);
     opacity: 1;
   }
-}
+}  */
 
 
 @media screen and (max-width:700px){
@@ -254,7 +254,7 @@ footer{
         padding:2rem 4rem;
     }
     #navbar a{
-        font-size: 0.4rem;
+        font-size: 0.5rem;
     }
     #navbar a:hover{
         color:#880000;
@@ -379,7 +379,7 @@ footer{
         padding:1rem;
     }
     #navbar a{
-        font-size: 0.4rem;
+        font-size: 0.5rem;
     }
     #navbar a:hover{
         color:#880000;
