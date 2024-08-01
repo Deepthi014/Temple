@@ -345,7 +345,7 @@ footer{
 
 @media screen and (max-width:550px){
     #navbar{
-        padding:0rem;
+        padding:2rem;
     }
     #navbar a{
         font-size: 0.5rem;
