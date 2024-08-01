@@ -48,6 +48,10 @@ body{
 #main_head{
     margin-top:6rem
 }
+ .container {
+    position:relative;  
+        top:10px
+    }
 .containerH div{
     width:90%;
     display: flex;
@@ -237,6 +241,10 @@ footer{
     #main_head{
         margin-top:0.1rem
     }
+     .container {
+/*     position:relative;  */
+        top:20px
+    }
     .containerH div{
         width:90%;
     }
@@ -372,10 +380,10 @@ footer{
         /* height:200px */
 
     }
-    /* .container {
-        position:relative; 
+    .container {
+/*         position:relative;  */
         top:20px
-    } */
+    }
 
 
     .containerA{
