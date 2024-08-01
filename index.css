@@ -242,8 +242,8 @@ footer{
         margin-top:0.1rem
     }
      .containerH {
-/*     position:relative;  */
-        top:20px
+         position:relative;  
+        top:0px
     }
     .containerH div{
         width:90%;
@@ -381,8 +381,8 @@ footer{
 
     }
     .containerH {
-/*         position:relative;  */
-        top:20px
+        position:relative;  
+        margin:50px 0px 20px 0px;
     }
 
 
