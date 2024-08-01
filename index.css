@@ -1,1 +1,470 @@
+*{
+    font-family: verdana ;
+    color:#6f6c6c;
+    margin:0;
+    padding: 0;
+    
+}
+body{
+    background-color: #ffecd2;
+}
+#navbar{
+    flex:1;
+    background-color: #ffecd2;
+    height: 0.4rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding:2rem 0rem;
+    position: fixed;
+    top:0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 5;
+    width: 100%;  
+}
+#navbar a {
+    text-decoration: none; 
+    font-size: 1rem;
+    color:black;
+}
+#navbar a:hover{
+    color:#880000;
+    font-size: 1.1em;
+}
+
+/* MAIN */
+
+.containerH{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main_head,
+#sub_head{
+    font-size: 2rem;
+    color:#4d4949;
+    margin-bottom: 0.5rem
+}
+#main_head{
+    margin-top:6rem
+}
+.containerH div{
+    width:90%;
+    display: flex;
+    justify-content: center;
+}
+.containerH div img{
+    width:60%;
+    margin:2rem 4rem;
+    text-align: center;
+}
+
+/* About us */
+
+.containerA{
+    padding-top: 2rem;
+}
+.containerA div{
+    background-color: rgba(255, 255, 255, 0.753);
+    margin:2rem 6rem;
+    padding: 2rem 3rem;
+    font-size: 1.2em;
+    line-height: 2em;
+    border:1px solid black;
+    border-radius: 20px;
+    text-align: center;
+
+}
+#about h1{
+    margin: 1.2rem;
+    font-size: 1.5rem;
+    color:#1b1b1b;
+}
+
+
+/* LOCATION */
+
+#location{
+    text-align: center;
+    padding: 4rem 4rem;
+}
+#location h1{  
+    font-size: 2rem;
+    color:#1b1b1b;
+    margin-bottom: 1rem;
+}
+#location iframe{
+    height:400px
+}
+
+#photos {
+    text-align: center;
+    padding-top: 2rem;
+    
+}
+
+#photos h1{
+    font-size: 2rem;
+    color:#1b1b1b;
+}
+
+#photos div{
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#photos div img{
+    margin: 4rem 3rem 5rem;
+    width: 400px;
+    height:300px;
+    border-radius:20px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.6); 
+
+}
+
+/* CONTACT  */
+#contactUs{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 2rem;
+
+}
+#contactUs h1{
+    font-size: 2rem;
+    color:#1b1b1b;
+}
+
+#con_div{
+    background-color:#fff5ef;
+    height: 100%;
+    margin: 2rem 3rem;
+    width:70%;
+    border:1px solid #1b1b1b;
+    border-radius: 50px 0px;
+
+}
+form{
+    margin-top: 1rem;
+}
+#con_div #name, #email,#place,
+#con_div textarea{
+    background-color:#fff5ef;
+    margin-top:3rem;
+    height:2rem;
+    width:50%;
+    border:none;
+    border-bottom:2px solid #fcb69f;
+
+}
+#con_div #name:focus,
+#con_div #email:focus,
+#con_div #place:focus,
+#con_div textarea:focus {
+    outline: none;
+    border-bottom:2px solid #676260;
+
+}
+#con_div #name::placeholder,
+#con_div #email::placeholder,
+#con_div #place::placeholder,
+#con_div textarea::placeholder{
+    padding-left: 8px;
+    font-style: italic;
+
+}
+#con_div form{
+    font-size: 2rem;
+}
+#btn{
+    margin-top:4rem;
+    background: rgb(252,182,159);
+    border:2px solid #676260;
+    height:3rem;
+    width:8rem;
+    border-radius: 20px;
+    margin-bottom: 40px ;
+    color:rgb(6, 6, 6);
+    font-size: 15px;
+    
+}
+#btn:hover{
+    background-color: #fff5ef;
+    border:2px solid rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer{
+    background-color: #1b1b1b;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 3rem 0rem ;
+    line-height: 2rem;
+    width:100%;
+}
+
+#footer_1 pre{
+    color:rgba(255, 255, 255, 0.753);
+    font-size: 1rem;
+}
+
+#footer_1 pre i{
+    font-size: 2rem;
+    margin-right:1rem
+}
+
+@media screen and (max-width:700px){
+    #navbar{
+        padding:2rem 0rem;
+    }
+    #navbar a{
+        font-size: 0.5rem;
+    }
+    #navbar a:hover{
+        color:#880000;
+        font-size: 0.8em;
+    }
+    #main_head,
+    #sub_head{
+        font-size: 1.2rem;
+        margin-bottom: 0.2rem
+    }
+    #main_head{
+        margin-top:0.1rem
+    }
+    .containerH div{
+        width:90%;
+    }
+    .containerH div img{
+        width:80%;
+        margin:0.5rem 0.2rem;
+
+    }
+
+    .containerA{
+        padding-top: 1.5rem;
+    }
+    .containerA div{
+        margin:1rem 2rem;
+        padding: 1rem 2rem;
+        font-size: 1em;
+        line-height: 1.5em;
+        border-radius: 20px;    
+    }
+    #about h1{
+        margin: 1rem;
+        font-size: 1rem;
+    }
+
+    #location{
+        padding: 3rem 2rem;
+    }
+    #location h1{  
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    #location iframe{
+        height:300px
+    }
+
+    #photos {
+        padding-top: 1rem;   
+    }
+    
+    #photos h1{
+        font-size: 1rem;
+    }
+    #photos div{
+        flex-direction: column;
+       
+    }
+    
+    #photos div img{
+        margin: 2rem 3rem 2rem;
+        width: 480px;
+        height:320px;    
+    }
+    #photos h3{
+        font-size: 0.9rem;
+        padding:0 7px
+    }
+
+    #contactUs{ 
+        padding-top: 2rem;
+    }
+    #contactUs h1{
+        font-size: 1rem;
+    }
+    #con_div{
+        width:80%;
+        border-radius: 40px 0px;
+    }
+    form{
+        margin-top: 0.5rem;
+    }
+    #con_div #name, #email,#place,
+    #con_div textarea{
+        margin-top:2rem;
+        height:2rem;
+        width:70%;    
+        font-size: 13px;
+    }
+  
+    #con_div form{
+        font-size: 1rem;
+    }
+    #btn{
+        margin-top:2rem;
+        height:1.9rem;
+        width:7rem;
+        margin-bottom: 30px ;
+        font-size: 10px;
+        
+    }
+    footer{
+        margin-top: 5rem;
+        padding: 2rem 0rem;
+        line-height: 2rem;
+    }
+    #footer_1 pre{
+        font-size: 0.9rem;
+    }
+    
+    #footer_1 pre i{
+        font-size: 1.2rem;
+        margin-right:0.7rem
+    }
+    
+
+}
+
+@media screen and (max-width:550px){
+    #navbar{
+        padding:0rem;
+    }
+    #navbar a{
+        font-size: 0.5rem;
+    }
+    #navbar a:hover{
+        color:#880000;
+        font-size: 0.6em;
+    }
+
+    #main_head,
+    #sub_head{
+        font-size: 0.7rem;
+        margin-bottom: 0.1rem
+    }
+    #main_head{
+        margin-top:0.1rem
+    }
+    .containerH div{
+        width:90%;
+    }
+    .containerH div img{
+        width:80%;
+        margin:0.5rem 1rem;
+        /* height:200px */
+
+    }
+    /* .container {
+        position:relative; 
+        top:20px
+    } */
+
+
+    .containerA{
+        padding-top: 1px;
+    }
+    .containerA div{
+        margin:1rem 2rem;
+        padding: 1rem 2rem;
+        font-size: 0.5em;
+        line-height: 1.5em;
+        border-radius: 10px;    
+    }
+    #about h1{
+        margin: 1rem;
+        font-size: 1rem;
+    }
+    #location{
+        padding: 2rem 1rem;
+    }
+    #location h1{  
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    #location iframe{
+        height:200px
+    }
+    #photos {
+        padding-top: 1rem;   
+    }
+    
+    #photos h1{
+        font-size: 1rem;
+    }
+    #photos div{
+        flex-direction: column;
+       
+    }
+    
+    #photos div img{
+        margin: 2rem 2rem 2rem;
+        width: 250px;
+        height:180px;    
+    }
+    #photos h3{
+        font-size: 0.6rem;
+        padding:0 5px
+    }
+
+    #contactUs{ 
+        padding-top: 1rem;
+    }
+    #contactUs h1{
+        font-size: 1rem;
+    }
+    #con_div{
+        width:85%;
+        border-radius: 30px 0px;
+    }
+    form{
+        margin-top: 0.5rem;
+    }
+    #con_div #name, #email,#place,
+    #con_div textarea{
+        margin-top:2rem;
+        height:2rem;
+        width:65%;    
+        font-size: 9px;
+    }
+  
+    #btn{
+        margin-top:1.5rem;
+        height:1.5rem;
+        width:7rem;
+        margin-bottom: 20px ;
+        font-size: 9px;
+    }
+    footer{
+        margin-top: 3rem;
+        padding: 1.2rem 0rem;
+        line-height: 0.8rem;
+    }
+    #footer_1 pre{
+        font-size: 0.4rem;
+    }
+    
+    #footer_1 pre i{
+        font-size: 0.3rem;
+        margin-right:0.2rem
+    }
+}
+
 
