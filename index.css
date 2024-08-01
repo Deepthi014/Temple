@@ -48,7 +48,7 @@ body{
 #main_head{
     margin-top:6rem
 }
- .container {
+ .containerH {
     position:relative;  
         top:10px
     }
@@ -241,7 +241,7 @@ footer{
     #main_head{
         margin-top:0.1rem
     }
-     .container {
+     .containerH {
 /*     position:relative;  */
         top:20px
     }
@@ -380,7 +380,7 @@ footer{
         /* height:200px */
 
     }
-    .container {
+    .containerH {
 /*         position:relative;  */
         top:20px
     }
